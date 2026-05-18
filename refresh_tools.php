@@ -10,35 +10,35 @@ $tools = [
         'type' => 'tools',
         'price' => 1200,
         'desc' => 'High-performance tractor for large scale land preparation and plowing.',
-        'image' => 'IMG_3458.JPG'
+        'image' => 'img_3458.jpg'
     ],
     [
         'name' => 'Master Harvester 3000',
         'type' => 'tools',
         'price' => 2500,
         'desc' => 'Advanced combine harvester for quick and efficient grain harvesting.',
-        'image' => 'IMG_3459.JPG'
+        'image' => 'img_3459.jpg'
     ],
     [
         'name' => 'Precision Tiller',
         'type' => 'tools',
         'price' => 450,
         'desc' => 'Motorized rotary tiller perfect for preparing soil for planting.',
-        'image' => 'IMG_3460.JPG'
+        'image' => 'img_3460.jpg'
     ],
     [
         'name' => 'Pro-Spray Industrial',
         'type' => 'tools',
         'price' => 180,
         'desc' => 'Industrial grade boom sprayer for efficient fertilizer application.',
-        'image' => 'IMG_3461.JPG'
+        'image' => 'img_3461.jpg'
     ],
     [
         'name' => 'Auto-Planter Pro',
         'type' => 'tools',
         'price' => 750,
         'desc' => 'Precision pneumatic planter for uniform seed distribution and depth.',
-        'image' => 'IMG_3462.JPG'
+        'image' => 'img_3462.jpg'
     ]
 ];
 

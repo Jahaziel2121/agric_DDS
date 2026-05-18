@@ -19,7 +19,7 @@ $more_products = [
     [
         'name' => 'Healthy Cattle',
         'type' => 'Cattle',
-        'image_src' => 'images/cattle.JPG',
+        'image_src' => 'images/cattle.jpg',
         'dest' => 'uploads/cattle_dummy.jpg',
         'qty' => 5,
         'unit' => 'heads',
@@ -29,7 +29,7 @@ $more_products = [
     [
         'name' => 'Farm Fresh Eggs',
         'type' => 'Eggs',
-        'image_src' => 'images/eggs.JPG',
+        'image_src' => 'images/eggs.jpg',
         'dest' => 'uploads/eggs_dummy.jpg',
         'qty' => 50,
         'unit' => 'crates',
@@ -39,7 +39,7 @@ $more_products = [
     [
         'name' => 'Goat for Sale',
         'type' => 'Livestock',
-        'image_src' => 'images/goat.JPG',
+        'image_src' => 'images/goat.jpg',
         'dest' => 'uploads/goat_dummy.jpg',
         'qty' => 15,
         'unit' => 'heads',
@@ -49,7 +49,7 @@ $more_products = [
     [
         'name' => 'Healthy Pigs',
         'type' => 'Pig',
-        'image_src' => 'images/pig.JPG',
+        'image_src' => 'images/pig.jpg',
         'dest' => 'uploads/pig_dummy.jpg',
         'qty' => 10,
         'unit' => 'heads',
@@ -59,7 +59,7 @@ $more_products = [
     [
         'name' => 'Farm Rabbits',
         'type' => 'Rabbit',
-        'image_src' => 'images/rabbit.JPG',
+        'image_src' => 'images/rabbit.jpg',
         'dest' => 'uploads/rabbit_dummy.jpg',
         'qty' => 30,
         'unit' => 'heads',
@@ -69,7 +69,7 @@ $more_products = [
     [
         'name' => 'Big Turkey',
         'type' => 'Turkey',
-        'image_src' => 'images/turkey.JPG',
+        'image_src' => 'images/turkey.jpg',
         'dest' => 'uploads/turkey_dummy.jpg',
         'qty' => 20,
         'unit' => 'birds',
@@ -79,7 +79,7 @@ $more_products = [
     [
         'name' => 'Fresh Okro',
         'type' => 'Okro',
-        'image_src' => 'images/okro.JPG',
+        'image_src' => 'images/okro.jpg',
         'dest' => 'uploads/okro_dummy.jpg',
         'qty' => 100,
         'unit' => 'baskets',
@@ -99,7 +99,7 @@ $more_products = [
     [
         'name' => 'Fresh Watermelon',
         'type' => 'Watermelon',
-        'image_src' => 'images/watermelon.JPG',
+        'image_src' => 'images/watermelon.jpg',
         'dest' => 'uploads/watermelon_dummy.jpg',
         'qty' => 80,
         'unit' => 'fruits',
@@ -109,7 +109,7 @@ $more_products = [
     [
         'name' => 'Mixed Vegetables',
         'type' => 'Vegetables',
-        'image_src' => 'images/vegetables.JPG',
+        'image_src' => 'images/vegetables.jpg',
         'dest' => 'uploads/vegetables_dummy.jpg',
         'qty' => 60,
         'unit' => 'baskets',

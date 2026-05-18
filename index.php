@@ -482,7 +482,7 @@ $search_query = htmlspecialchars($_GET['q'] ?? '');
     /* CTA SECTION */
     .cta-section {
         padding: 120px 0;
-        background: url('images/maizes.JPG') center/cover fixed; /* Parallax effect */
+        background: url('images/maizes.jpg') center/cover fixed; /* Parallax effect */
         position: relative;
         border: none;
     }
@@ -789,7 +789,7 @@ $search_query = htmlspecialchars($_GET['q'] ?? '');
         <div class="row g-4">
             <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
                 <div class="category-card" onclick="window.location.href='search.php?q=vegetables'">
-                    <img src="images/vegetables.JPG" alt="Fresh Vegetables">
+                    <img src="images/vegetables.jpg" alt="Fresh Vegetables">
                     <div class="category-overlay">
                         <h4>Fresh Vegetables</h4>
                         <span>View Listings →</span>
@@ -798,7 +798,7 @@ $search_query = htmlspecialchars($_GET['q'] ?? '');
             </div>
             <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                 <div class="category-card" onclick="window.location.href='search.php?q=grains'">
-                    <img src="images/maize.JPG" alt="Grains & Cereals">
+                    <img src="images/maize.jpg" alt="Grains & Cereals">
                     <div class="category-overlay">
                         <h4>Grains & Cereals</h4>
                         <span>View Listings →</span>
@@ -807,7 +807,7 @@ $search_query = htmlspecialchars($_GET['q'] ?? '');
             </div>
             <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
                 <div class="category-card" onclick="window.location.href='search.php?q=livestock'">
-                    <img src="images/cattle.JPG" alt="Livestock">
+                    <img src="images/cattle.jpg" alt="Livestock">
                     <div class="category-overlay">
                         <h4>Livestock</h4>
                         <span>View Listings →</span>
@@ -949,9 +949,9 @@ $search_query = htmlspecialchars($_GET['q'] ?? '');
             <div class="col-lg-7 col-md-9" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="cta-content-wrapper">
                     <div style="margin-bottom: 25px;">
-                        <img src="images/vegetables.JPG" alt="Fresh Produce" style="width: 90px; height: 90px; object-fit: cover; border-radius: 50%; border: 3px solid white; box-shadow: 0 10px 20px rgba(0,0,0,0.2); margin: 0 -5px; position: relative; z-index: 2; display: inline-block;">
-                        <img src="images/cattle.JPG" alt="Livestock" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; border: 3px solid white; box-shadow: 0 15px 30px rgba(0,0,0,0.3); margin: 0 -15px; transform: translateY(-10px); position: relative; z-index: 3; display: inline-block;">
-                        <img src="images/maize.JPG" alt="Grains" style="width: 90px; height: 90px; object-fit: cover; border-radius: 50%; border: 3px solid white; box-shadow: 0 10px 20px rgba(0,0,0,0.2); margin: 0 -5px; position: relative; z-index: 1; display: inline-block;">
+                        <img src="images/vegetables.jpg" alt="Fresh Produce" style="width: 90px; height: 90px; object-fit: cover; border-radius: 50%; border: 3px solid white; box-shadow: 0 10px 20px rgba(0,0,0,0.2); margin: 0 -5px; position: relative; z-index: 2; display: inline-block;">
+                        <img src="images/cattle.jpg" alt="Livestock" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; border: 3px solid white; box-shadow: 0 15px 30px rgba(0,0,0,0.3); margin: 0 -15px; transform: translateY(-10px); position: relative; z-index: 3; display: inline-block;">
+                        <img src="images/maize.jpg" alt="Grains" style="width: 90px; height: 90px; object-fit: cover; border-radius: 50%; border: 3px solid white; box-shadow: 0 10px 20px rgba(0,0,0,0.2); margin: 0 -5px; position: relative; z-index: 1; display: inline-block;">
                     </div>
                     <h2 style="font-size: 2.8rem; font-weight: 800; margin-bottom: 20px; color: white; line-height: 1.2;">Ready to transform your agricultural business?</h2>
                     <p style="font-size: 1.1rem; color: rgba(255,255,255,0.9); margin-bottom: 35px; max-width: 500px; margin-left: auto; margin-right: auto;">Join thousands of verified farmers and buyers experiencing the future of agricultural trading today.</p>

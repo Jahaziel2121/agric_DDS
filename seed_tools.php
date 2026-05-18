@@ -7,8 +7,8 @@ $companies = [
         'location' => 'Kumasi',
         'phone' => '0551234567',
         'services' => [
-            ['tools', 'Heavy Duty Tractor', 1500, 'Rent a heavy duty tractor for land preparation.', 'IMG_3458.JPG'],
-            ['tools', 'Combine Harvester', 2500, 'Efficient combine harvester for maize and rice.', 'IMG_3459.JPG']
+            ['tools', 'Heavy Duty Tractor', 1500, 'Rent a heavy duty tractor for land preparation.', 'img_3458.jpg'],
+            ['tools', 'Combine Harvester', 2500, 'Efficient combine harvester for maize and rice.', 'img_3459.jpg']
         ]
     ],
     [
@@ -16,8 +16,8 @@ $companies = [
         'location' => 'Accra',
         'phone' => '0249876543',
         'services' => [
-            ['tools', 'Rotary Tiller', 400, 'Motorized rotary tiller for soil aeration.', 'IMG_3460.JPG'],
-            ['tools', 'Industrial Sprayer', 200, 'High-capacity sprayer for fertilizer and pesticide.', 'IMG_3461.JPG']
+            ['tools', 'Rotary Tiller', 400, 'Motorized rotary tiller for soil aeration.', 'img_3460.jpg'],
+            ['tools', 'Industrial Sprayer', 200, 'High-capacity sprayer for fertilizer and pesticide.', 'img_3461.jpg']
         ]
     ],
     [
@@ -25,7 +25,7 @@ $companies = [
         'location' => 'Tamale',
         'phone' => '0501122334',
         'services' => [
-            ['tools', 'Precision Planter', 600, 'Automated precision planter for row crops.', 'IMG_3462.JPG']
+            ['tools', 'Precision Planter', 600, 'Automated precision planter for row crops.', 'img_3462.jpg']
         ]
     ]
 ];

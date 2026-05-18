@@ -40,9 +40,9 @@ $conn->query("INSERT INTO farmers (user_id, name, phone, location, role, farm_si
 if (!is_dir('uploads')) {
     mkdir('uploads', 0777, true);
 }
-copy('images/maize.JPG', 'uploads/maize_dummy.jpg');
-copy('images/tomato.JPG', 'uploads/tomato_dummy.jpg');
-copy('images/chicken.JPG', 'uploads/chicken_dummy.jpg');
+copy('images/maize.jpg', 'uploads/maize_dummy.jpg');
+copy('images/tomato.jpg', 'uploads/tomato_dummy.jpg');
+copy('images/chicken.jpg', 'uploads/chicken_dummy.jpg');
 
 $products = [
     "INSERT INTO products (user_id, product_name, name, type, quantity, unit, image, status, description, price) VALUES ($farmer1, 'Premium White Maize', 'Premium White Maize', 'Maize', 100, 'bags', 'maize_dummy.jpg', 'available', 'High-quality freshly harvested white maize. Excellent for consumption and processing.', 450)",
