@@ -23,8 +23,11 @@ $result = $conn->query("SELECT * FROM buy_products");
     <td><?= $row['category'] ?></td>
     <td>GHS <?= $row['price'] ?></td>
     <td><?= $row['quantity'] ?></td>
-    <?php $img_path = strpos($row['image'], 'uploads/') === 0 ? $row['image'] : "uploads/" . $row['image']; ?>
-    <td><img src="<?= $img_path ?>" width="60"></td>
+    <?php 
+    $img_path = strpos($row['image'], 'uploads/') === 0 ? $row['image'] : "uploads/" . $row['image']; 
+    $img = (!empty($row['image']) && file_exists($img_path)) ? $img_path : "default_product.jpg";
+    ?>
+    <td><img src="<?= $img ?>" width="60"></td>
 
     <td>
         <a href="edit_product.php?id=<?= $row['id'] ?>">Edit</a>

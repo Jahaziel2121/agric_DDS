@@ -109,7 +109,7 @@ $_order_badge = "<span class='notif-badge' id='badge-orders' style='display:" . 
 
             <?php if ($role || $is_admin): ?>
                 <a href="profile.php" class="nav-user">
-                    <?php if (!empty($_user_pic)): ?>
+                    <?php if (!empty($_user_pic) && file_exists("uploads/profiles/" . $_user_pic)): ?>
                         <img src="uploads/profiles/<?= htmlspecialchars($_user_pic) ?>" class="nav-user-pic" alt="Profile">
                     <?php else: ?>
                         <i class='fas fa-user-circle' style="font-size:18px;"></i>

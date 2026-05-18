@@ -70,8 +70,11 @@ button:hover {
 
 <div class="card">
 
-    <?php $img_path = strpos($row['image'], 'uploads/') === 0 ? $row['image'] : "uploads/" . $row['image']; ?>
-    <img src="<?= $img_path ?>">
+    <?php 
+    $img_path = strpos($row['image'], 'uploads/') === 0 ? $row['image'] : "uploads/" . $row['image']; 
+    $img = (!empty($row['image']) && file_exists($img_path)) ? $img_path : "default_product.jpg";
+    ?>
+    <img src="<?= $img ?>">
 
     <h3><?= $row['product_name'] ?></h3>
 
