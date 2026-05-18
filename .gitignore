@@ -1,0 +1,8 @@
+vendor/
+uploads/
+database.sqlite
+.DS_Store
+.php
+render()
+setPaper('A4'
+stream(output.pdf)
