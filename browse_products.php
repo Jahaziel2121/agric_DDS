@@ -6,29 +6,37 @@ include 'back_button.php';
 /* <i class='fas fa-check-circle'></i> AUTO IMAGE FUNCTION (UNCHANGED) */
 function getProductImage($type) {
     $type = strtolower($type);
-    if (strpos($type, 'maize') !== false) return 'maize.jpg';
-    if (strpos($type, 'rice') !== false) return 'rice.jpg';
-    if (strpos($type, 'beans') !== false) return 'beans.jpg';
-    if (strpos($type, 'tomato') !== false) return 'tomato.jpg';
-    if (strpos($type, 'onion') !== false) return 'onion.jpg';
-    if (strpos($type, 'pepper') !== false) return 'pepper.jpg';
-    if (strpos($type, 'cabbage') !== false) return 'cabbage.jpg';
-    if (strpos($type, 'carrot') !== false) return 'carrot.jpg';
-    if (strpos($type, 'potato') !== false) return 'potato.jpg';
-    if (strpos($type, 'garlic') !== false) return 'garlic.jpg';
-    if (strpos($type, 'ginger') !== false) return 'ginger.jpg';
-    if (strpos($type, 'cucumber') !== false) return 'cucumber.jpg';
-    if (strpos($type, 'lettuce') !== false) return 'lettuce.jpg';
-    if (strpos($type, 'spinach') !== false) return 'spinach.jpg';
-    if (strpos($type, 'okra') !== false) return 'okra.jpg';
-    if (strpos($type, 'eggplant') !== false) return 'eggplant.jpg';
-    if (strpos($type, 'watermelon') !== false) return 'watermelon.jpg';
-    if (strpos($type, 'pineapple') !== false) return 'pineapple.jpg';
-    if (strpos($type, 'mango') !== false) return 'mango.jpg';
-    if (strpos($type, 'banana') !== false) return 'banana.jpg';
+    if (strpos($type, 'maize') !== false) return 'maize.JPG';
+    if (strpos($type, 'rice') !== false) return 'food stuffs.JPG';
+    if (strpos($type, 'beans') !== false) return 'food stuffs.JPG';
+    if (strpos($type, 'tomato') !== false) return 'tomato.JPG';
+    if (strpos($type, 'onion') !== false) return 'onions.jpeg';
+    if (strpos($type, 'pepper') !== false) return 'green,red,yellwo papper.JPG';
+    if (strpos($type, 'cabbage') !== false) return 'vegetables.JPG';
+    if (strpos($type, 'carrot') !== false) return 'vegetables.JPG';
+    if (strpos($type, 'potato') !== false) return 'food stuffs.JPG';
+    if (strpos($type, 'garlic') !== false) return 'onions.jpeg';
+    if (strpos($type, 'ginger') !== false) return 'food stuffs.JPG';
+    if (strpos($type, 'cucumber') !== false) return 'vegetables.JPG';
+    if (strpos($type, 'lettuce') !== false) return 'vegetables.JPG';
+    if (strpos($type, 'spinach') !== false) return 'vegetables.JPG';
+    if (strpos($type, 'okra') !== false) return 'okro.JPG';
+    if (strpos($type, 'eggplant') !== false) return 'vegetables.JPG';
+    if (strpos($type, 'watermelon') !== false) return 'watermelon.JPG';
+    if (strpos($type, 'pineapple') !== false) return 'food stuffs.JPG';
+    if (strpos($type, 'mango') !== false) return 'food stuffs.JPG';
+    if (strpos($type, 'banana') !== false) return 'food stuffs.JPG';
+    if (strpos($type, 'poultry') !== false) return 'chicken.JPG';
+    if (strpos($type, 'chicken') !== false) return 'chicken.JPG';
+    if (strpos($type, 'livestock') !== false) return 'cattle.JPG';
+    if (strpos($type, 'cattle') !== false) return 'cattle.JPG';
+    if (strpos($type, 'pig') !== false) return 'pig.JPG';
+    if (strpos($type, 'rabbit') !== false) return 'rabbit.JPG';
+    if (strpos($type, 'turkey') !== false) return 'turkey.JPG';
+    if (strpos($type, 'goat') !== false) return 'goat.JPG';
 
     // DEFAULT IMAGE
-    return "default.jpg";
+    return "bg.jpg";
 }
 ?>
 
@@ -313,8 +321,9 @@ if ($result->num_rows > 0) {
         echo "<div class='card' $card_style>";
 
         /* IMAGE */
-        if (!empty($row['image']) && file_exists("uploads/".$row['image'])) {
-            echo "<img src='uploads/{$row['image']}'>";
+        $img_path = strpos($row['image'], 'uploads/') === 0 ? $row['image'] : "uploads/" . $row['image'];
+        if (!empty($row['image']) && file_exists($img_path)) {
+            echo "<img src='{$img_path}'>";
         } else {
             $img = getProductImage($row['type']);
             echo "<img src='images/{$img}'>";

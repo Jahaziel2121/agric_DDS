@@ -236,8 +236,11 @@ body { background: #f4f7f2; }
         <div class="section-label"><i class='fas fa-wheat-awn'></i> Farm Products (<?= $total_products ?>)</div>
         <?php while ($r = $products->fetch_assoc()): ?>
             <a href="browse_products.php" class="result-card product <?= $r['is_promoted'] ? 'promoted' : '' ?>">
-                <?php if (!empty($r['image']) && file_exists("uploads/" . $r['image'])): ?>
-                    <img src="uploads/<?= $r['image'] ?>" alt="">
+                <?php 
+                    $img_path = strpos($r['image'], 'uploads/') === 0 ? $r['image'] : "uploads/" . $r['image'];
+                    if (!empty($r['image']) && file_exists($img_path)): 
+                ?>
+                    <img src="<?= $img_path ?>" alt="">
                 <?php else: ?>
                     <div class="result-icon product"><i class='fas fa-seedling'></i></div>
                 <?php endif; ?>

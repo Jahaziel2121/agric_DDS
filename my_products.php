@@ -251,7 +251,8 @@ body { background: #f4f7f6; color: #333; padding-bottom: 50px; }
                         $result = $conn->query("SELECT * FROM products WHERE user_id='$user_id' ORDER BY id DESC");
                         if($result && $result->num_rows > 0):
                             while($row = $result->fetch_assoc()):
-                                $img = !empty($row['image']) ? "uploads/".$row['image'] : "default_product.jpg";
+                                $img_path = strpos($row['image'], 'uploads/') === 0 ? $row['image'] : "uploads/" . $row['image'];
+                                $img = (!empty($row['image']) && file_exists($img_path)) ? $img_path : "default_product.jpg";
                         ?>
                         <tr>
                             <td>
