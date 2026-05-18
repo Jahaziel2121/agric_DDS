@@ -1,5 +1,4 @@
 vendor/
-database.sqlite
 .DS_Store
 .php
 render()
