@@ -1,5 +1,4 @@
 vendor/
-uploads/
 database.sqlite
 .DS_Store
 .php
